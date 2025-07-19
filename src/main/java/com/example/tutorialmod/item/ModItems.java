@@ -13,6 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModItems{
     // Register Items
     public static final Item ICE_ETHER = registerItems("ice_ether", new Item(new Item.Settings()));
+    public static final Item XX_SWORD = registerItems("xx_sword", new Item(new Item.Settings()));
 
     private static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TemplateMod.MOD_ID, id), item);
@@ -21,7 +22,9 @@ public class ModItems{
     //Add Items to ItemGroup
     private static void addItemToIG(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(ICE_ETHER);
+        fabricItemGroupEntries.add(XX_SWORD);
     }
+
     public static void registerModItems(){
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIG);
         TemplateMod.LOGGER.info("Register Items");

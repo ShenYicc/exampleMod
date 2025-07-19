@@ -10,9 +10,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block ICE_ETHER_BLOCK = register("ice_ether_block", new Block(AbstractBlock.Settings.create().strength(3.0f, 3.0f)));
-    public static final Block ICE_ETHER_ORE = register("ice_ether_ore", new Block(AbstractBlock.Settings.create().strength(4.5f, 6.0f)));
-    public static final Block RAW_ICE_ETHER_BLOCK = register("raw_ice_ether_block", new Block(AbstractBlock.Settings.create().strength(3.0f, 3.0f)));
+    public static final Block ICE_ETHER_BLOCK = register("ice_ether_block", new Block(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 3.0f)));
+    public static final Block ICE_ETHER_ORE = register("ice_ether_ore", new Block(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 3.0f)));
+    public static final Block RAW_ICE_ETHER_BLOCK = register("raw_ice_ether_block", new Block(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 3.0f)));
 
     public static void registerBlockItems(String id, Block block){
         Item item = Registry.register(Registries.ITEM, Identifier.of(TemplateMod.MOD_ID, id), new BlockItem(block, new Item.Settings()));
@@ -23,13 +23,11 @@ public class ModBlocks {
     }
 
     public static Block register(String id, Block block) {
-        return Registry.register(Registries.BLOCK, Identifier.of(TemplateMod.MOD_ID), block);
+        registerBlockItems(id, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(TemplateMod.MOD_ID, id), block);
     }
 
     public static void registerModBlocks(){
-        registerBlockItems("ice_ether_block", ICE_ETHER_BLOCK);
-        registerBlockItems("ice_ether_ore", ICE_ETHER_ORE);
-        registerBlockItems("raw_ice_ether_block", RAW_ICE_ETHER_BLOCK);
         TemplateMod.LOGGER.info("Register Mod Blocks");
     }
 

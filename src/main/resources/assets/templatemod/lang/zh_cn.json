@@ -1,0 +1,8 @@
+{
+  "item.templatemod.ice_ether" : "冰之以太",
+  "item.templatemod.xx_sword" : "枭雄",
+
+  "block.templatemod.ice_ether_block" : "冰之以太块",
+  "block.templatemod.ice_ether_ore" : "冰之以太矿",
+  "block.templatemod.raw_ice_ether_block" : "纯冰之以太块"
+}
