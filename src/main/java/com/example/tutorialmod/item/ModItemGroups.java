@@ -1,9 +1,11 @@
 package com.example.tutorialmod.item;
 
 import com.example.tutorialmod.TemplateMod;
+import com.example.tutorialmod.block.ModBlocks;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -22,10 +24,16 @@ public class ModItemGroups {
     public static void registerModItemGroups(){
         Registry.register(Registries.ITEM_GROUP, TEMPLATE_GROUP,
                 ItemGroup.create(ItemGroup.Row.TOP, 7)
-                        .displayName(Text.translatable("itemGroup.templatemod.template_group"))
+                        .displayName(Text.translatable("itemGroup.template_group"))
                         .icon(()->new ItemStack(ModItems.ICE_ETHER))
                         .entries((displayContext, entries) -> {
+                            //Items
                             entries.add(ModItems.ICE_ETHER);
+
+                            //Blocks
+                            entries.add(ModBlocks.ICE_ETHER_BLOCK);
+                            entries.add(ModBlocks.ICE_ETHER_ORE);
+                            entries.add(ModBlocks.RAW_ICE_ETHER_BLOCK);
                         })
                         .build()
         );

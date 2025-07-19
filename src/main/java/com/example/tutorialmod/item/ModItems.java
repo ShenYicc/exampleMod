@@ -18,8 +18,6 @@ public class ModItems{
         return Registry.register(Registries.ITEM, Identifier.of(TemplateMod.MOD_ID, id), item);
     }
 
-
-
     //Add Items to ItemGroup
     private static void addItemToIG(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(ICE_ETHER);
