@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 700,
+  "experience": 0.25,
+  "ingredient": {
+    "item": "templatemod:raw_ice_ether"
+  },
+  "result": {
+    "id": "templatemod:ice_ether"
+  }
+}

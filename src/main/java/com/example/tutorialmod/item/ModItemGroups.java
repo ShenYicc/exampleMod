@@ -29,6 +29,7 @@ public class ModItemGroups {
                         .entries((displayContext, entries) -> {
                             //Items
                             entries.add(ModItems.ICE_ETHER);
+                            entries.add(ModItems.RAW_ICE_ETHER);
                             entries.add(ModItems.XX_SWORD);
 
                             //Blocks

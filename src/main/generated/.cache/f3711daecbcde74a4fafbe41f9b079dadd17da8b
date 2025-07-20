@@ -1,0 +1,13 @@
+// 1.21.1	2025-07-20T13:07:15.1218364	TemplateMod/Model Definitions
+ef2487e9e5ff19d5050f6bbb1971894a726f0542 assets\templatemod\models\block\ice_ether_ore.json
+b1eee73bdf63051610c9cba237830ac0361fe7bd assets\templatemod\models\item\ice_ether_block.json
+1206bdad22debf35fd008efd3cf7e99f9984fa8d assets\templatemod\blockstates\ice_ether_block.json
+12864c5b2e5f96aa9f99ec5e1c6567e6ec16a0c0 assets\templatemod\models\block\raw_ice_ether_block.json
+bfc4c51cf630d19ce1bb78291bf773af132d39cf assets\templatemod\models\item\raw_ice_ether_block.json
+af46b245520a4ab039895008b39cbd45a12af723 assets\templatemod\blockstates\ice_ether_ore.json
+7956d06234f20ddd6d6a7848d076be43ee9b5541 assets\templatemod\models\item\ice_ether.json
+7c6f948dc33e6f8873ef9614099ae958fd873005 assets\templatemod\models\block\ice_ether_block.json
+274356c24c7772cf3a1f24b9ab3d9b022f75b1fd assets\templatemod\models\item\xx_sword.json
+9eb0ebd8c6e2de6fa51c478d15d119fb2d773dd6 assets\templatemod\models\item\raw_ice_ether.json
+a81af36a62d7cccc16c1577bddf4648e38171ed2 assets\templatemod\blockstates\raw_ice_ether_block.json
+0188247112537a7218cdae48dfc8e63352f57950 assets\templatemod\models\item\ice_ether_ore.json
