@@ -3,10 +3,14 @@ package com.example.tutorialmod;
 import com.example.tutorialmod.block.ModBlocks;
 import com.example.tutorialmod.item.ModItemGroups;
 import com.example.tutorialmod.item.ModItems;
+import com.example.tutorialmod.mixin.GrassColorsMixin;
+import com.example.tutorialmod.tags.ModBlockTags;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Arrays;
 
 public class TemplateMod implements ModInitializer {
 	public static final String MOD_ID = "templatemod";
@@ -28,5 +32,14 @@ public class TemplateMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
 		ModBlocks.registerModBlocks();
+		ModBlockTags.registerModBlockTags();
+
+		int[] grassColormap = GrassColorsMixin.getColorMap();
+		LOGGER.info("Grass color map: {} ", grassColormap.length);
+		int[] colorMap = new int[128];
+		GrassColorsMixin.setColorMap(colorMap);
+		LOGGER.info("Grass color map: {} ", colorMap.length);
+
+
 	}
 }

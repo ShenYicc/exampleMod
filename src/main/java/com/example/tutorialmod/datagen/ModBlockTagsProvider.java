@@ -1,9 +1,11 @@
 package com.example.tutorialmod.datagen;
 
 import com.example.tutorialmod.block.ModBlocks;
+import com.example.tutorialmod.tags.ModBlockTags;
 import net.fabricmc.fabric.api.block.v1.FabricBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -28,5 +30,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ICE_ETHER_BLOCK)
                 .add(ModBlocks.RAW_ICE_ETHER_BLOCK);
+
+        getOrCreateTagBuilder(ModBlockTags.ORE_LIST)
+                .add(ModBlocks.ICE_ETHER_ORE);
     }
 }

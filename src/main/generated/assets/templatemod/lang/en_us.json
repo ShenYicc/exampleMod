@@ -2,8 +2,12 @@
   "block.templatemod.ice_ether_block": "Ice Ether Block",
   "block.templatemod.ice_ether_ore": "Ice Ether Block",
   "block.templatemod.raw_ice_ether_block": "Raw Ice Ether Block",
+  "item.templatemod.anthracite": "Anthracite",
+  "item.templatemod.cheese": "Cheese",
   "item.templatemod.ice_ether": "Ice Ether",
+  "item.templatemod.prospector": "Prospector",
   "item.templatemod.raw_ice_ether": "Raw Ice Ether",
+  "item.templatemod.strawberry": "Strawberry",
   "item.templatemod.xx_sword": "XX Sword",
   "itemGroup.template_group": "Template Group"
 }

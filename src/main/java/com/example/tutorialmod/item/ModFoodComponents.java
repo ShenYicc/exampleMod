@@ -6,9 +6,14 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.registry.RegistryKeys;
 
 public class ModFoodComponents {
-    public static final FoodComponent CHEESE = new FoodComponent.Builder().nutrition(8).saturationModifier(0.8f).build();
+    public static final FoodComponent CHEESE = new FoodComponent.Builder().nutrition(8).saturationModifier(0.8f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 600), 0.5f)
+            .alwaysEdible()
+            .build();
     public static final FoodComponent STRAWBERRY = new FoodComponent.Builder().nutrition(6).saturationModifier(0.6f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 600), 0.5f).build();
+            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 600), 0.5f)
+            .alwaysEdible()
+            .build();
 
 
 }
