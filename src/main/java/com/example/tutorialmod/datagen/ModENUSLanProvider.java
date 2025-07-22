@@ -24,6 +24,13 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.ANTHRACITE, "Anthracite");
         translationBuilder.add(ModItems.PROSPECTOR, "Prospector");
         translationBuilder.add(ModItems.PLATE, "Plate");
+        translationBuilder.add(ModItems.FIRE_ETHER, "Fire Ether");
+        translationBuilder.add(ModItems.FIRE_ETHER_SWORD, "Fire Ether Sword");
+        translationBuilder.add(ModItems.FIRE_ETHER_PICKAXE, "Fire Ether Pickaxe");
+        translationBuilder.add(ModItems.FIRE_ETHER_AXE, "Fire Ether Axe");
+        translationBuilder.add(ModItems.FIRE_ETHER_SHOVEL, "Fire Ether Shovel");
+        translationBuilder.add(ModItems.FIRE_ETHER_HOE, "Fire Ether Hoe");
+
 
         translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "Ice Ether Block");
         translationBuilder.add(ModBlocks.RAW_ICE_ETHER_BLOCK, "Raw Ice Ether Block");

@@ -36,6 +36,12 @@ public class ModItemGroups {
                             entries.add(ModItems.ANTHRACITE);
                             entries.add(ModItems.PROSPECTOR);
                             entries.add(ModItems.PLATE);
+                            entries.add(ModItems.FIRE_ETHER);
+                            entries.add(ModItems.FIRE_ETHER_SWORD);
+                            entries.add(ModItems.FIRE_ETHER_AXE);
+                            entries.add(ModItems.FIRE_ETHER_HOE);
+                            entries.add(ModItems.FIRE_ETHER_PICKAXE);
+                            entries.add(ModItems.FIRE_ETHER_SHOVEL);
 
                             //Blocks
                             entries.add(ModBlocks.ICE_ETHER_BLOCK);
