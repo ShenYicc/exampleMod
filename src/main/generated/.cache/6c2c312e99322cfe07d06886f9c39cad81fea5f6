@@ -1,5 +1,9 @@
-// 1.21.1	2025-07-21T15:16:24.5868224	TemplateMod/Tags for minecraft:block
-1a1cb5996a49639259ecff8858a0593c450b5c0b data\templatemod\tags\block\ore_list.json
+// 1.21.1	2025-07-22T10:45:25.4121003	TemplateMod/Tags for minecraft:block
+793ec61df09889449d466be8478467556eaae6a1 data\templatemod\tags\block\ore_list.json
+6de089473dfb49fd2b3001145cc5d8f0ed8d36bc data\minecraft\tags\block\fence_gates.json
 1a1cb5996a49639259ecff8858a0593c450b5c0b data\minecraft\tags\block\needs_stone_tool.json
+6870efb68d978d941b1975a5e12a87b7750a3bd4 data\minecraft\tags\block\walls.json
 58fe4da799393519b08bd4e59d4cf279fc762c25 data\minecraft\tags\block\mineable\pickaxe.json
+976d825ca0ed7d779345d2c9894a5703411896f9 data\minecraft\tags\block\fences.json
 04fc6f3453524188c5dde72cc35009a49f0946d2 data\minecraft\tags\block\needs_iron_tool.json
+703b0f1041aed8b46246b581027453fada1d43f4 data\minecraft\tags\block\buttons.json

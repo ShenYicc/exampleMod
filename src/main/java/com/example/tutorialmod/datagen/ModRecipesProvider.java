@@ -3,6 +3,7 @@ package com.example.tutorialmod.datagen;
 import com.example.tutorialmod.TemplateMod;
 import com.example.tutorialmod.block.ModBlocks;
 import com.example.tutorialmod.item.ModItems;
+import com.example.tutorialmod.tags.ModItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
@@ -47,9 +48,9 @@ public class ModRecipesProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SUGAR, 3)
                 .pattern("###")
-                .input('#', Ingredient.ofItems(Items.BEETROOT))
-                .criterion("has_item", RecipeProvider.conditionsFromItem(Items.BEETROOT))
-                .offerTo(recipeExporter, Identifier.of(TemplateMod.MOD_ID, "beetroot_to_sugar"));
+                .input('#', ModItemTags.SUGAR_TAG)
+                .criterion("has_item", RecipeProvider.conditionsFromTag(ModItemTags.SUGAR_TAG))
+                .offerTo(recipeExporter, Identifier.of(TemplateMod.MOD_ID, "sugar_tag_to_sugar"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_ETHER_ORE)
                 .input(ModItems.RAW_ICE_ETHER)

@@ -23,6 +23,7 @@ public class ModItems{
     public static final Item ANTHRACITE = registerItems("anthracite", new Item(new Item.Settings()));
 
     public static final Item PROSPECTOR = registerItems("prospector", new Prospector(new Item.Settings().maxDamage(127)));
+    public static final Item PLATE = registerItems("plate", new Item(new Item.Settings()));
 
     private static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TemplateMod.MOD_ID, id), item);
@@ -38,6 +39,7 @@ public class ModItems{
         fabricItemGroupEntries.add(STRAWBERRY);
         fabricItemGroupEntries.add(ANTHRACITE);
         fabricItemGroupEntries.add(PROSPECTOR);
+        fabricItemGroupEntries.add(PLATE);
     }
 
     public static void registerModItems(){

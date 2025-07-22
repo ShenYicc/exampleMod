@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:beetroot"
+            "items": "#templatemod:sugar_tag"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "templatemod:beetroot_to_sugar"
+        "recipe": "templatemod:sugar_tag_to_sugar"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "templatemod:beetroot_to_sugar"
+      "templatemod:sugar_tag_to_sugar"
     ]
   }
 }

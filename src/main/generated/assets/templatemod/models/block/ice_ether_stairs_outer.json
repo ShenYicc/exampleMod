@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "templatemod:block/ice_ether_block",
+    "side": "templatemod:block/ice_ether_block",
+    "top": "templatemod:block/ice_ether_block"
+  }
+}

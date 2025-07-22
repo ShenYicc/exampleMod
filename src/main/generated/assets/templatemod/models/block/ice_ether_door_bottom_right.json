@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "templatemod:block/ice_ether_door_bottom",
+    "top": "templatemod:block/ice_ether_door_top"
+  }
+}

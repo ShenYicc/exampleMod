@@ -8,13 +8,17 @@ import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
 
 public class Prospector extends Item {
     private static final Logger log = LoggerFactory.getLogger(Prospector.class);
@@ -83,5 +87,15 @@ public class Prospector extends Item {
 
     private boolean isRightBlock(BlockState blockState) {
         return blockState.isIn(ModBlockTags.ORE_LIST);
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        super.appendTooltip(stack, context, tooltip, type);
+        if(Screen.hasShiftDown()){
+            tooltip.add(Text.translatable("item.templatemod.prospector.tooltip.shift"));
+        } else {
+            tooltip.add(Text.translatable("item.templatemod.prospector.tooltip"));
+        }
     }
 }

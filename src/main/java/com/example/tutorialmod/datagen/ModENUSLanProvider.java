@@ -23,11 +23,25 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.STRAWBERRY, "Strawberry");
         translationBuilder.add(ModItems.ANTHRACITE, "Anthracite");
         translationBuilder.add(ModItems.PROSPECTOR, "Prospector");
+        translationBuilder.add(ModItems.PLATE, "Plate");
 
         translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "Ice Ether Block");
         translationBuilder.add(ModBlocks.RAW_ICE_ETHER_BLOCK, "Raw Ice Ether Block");
         translationBuilder.add(ModBlocks.ICE_ETHER_ORE, "Ice Ether Block");
+        translationBuilder.add(ModBlocks.ICE_ETHER_STAIRS, "Ice Ether Stairs");
+        translationBuilder.add(ModBlocks.ICE_ETHER_SLAB, "Ice Ether Slab");
+        translationBuilder.add(ModBlocks.ICE_ETHER_BUTTON, "Ice Ether Button");
+        translationBuilder.add(ModBlocks.ICE_ETHER_PRESSURE_PLATE, "Ice Ether Pressure Plate");
+        translationBuilder.add(ModBlocks.ICE_ETHER_FENCE, "Ice Ether Fence");
+        translationBuilder.add(ModBlocks.ICE_ETHER_FENCE_GATE, "Ice Ether Fence Gate");
+        translationBuilder.add(ModBlocks.ICE_ETHER_WALL, "Ice Ether Wall");
+        translationBuilder.add(ModBlocks.ICE_ETHER_DOOR, "Ice Ether Door");
+        translationBuilder.add(ModBlocks.ICE_ETHER_TRAPDOOR, "Ice Ether Trapdoor");
 
         translationBuilder.add(ModItemGroups.TEMPLATE_GROUP, "Template Group");
+
+        translationBuilder.add("item.templatemod.prospector.tooltip.shift", "§1Right-click§r to prospect for ores");
+
+        translationBuilder.add("item.templatemod.prospector.tooltip", "Hold §6Shift§r for more info");
     }
 }
